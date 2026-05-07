@@ -8,7 +8,7 @@ Authors@R: person(
     email = "Mike.McMahon@dfo-mpo.gc.ca",
     comment = NULL
   )
-Description: Description: Provides a single function to load files from 
+Description: Provides a single function to load files from 
   Microsoft SharePoint or OneDrive directly into R using just a sharing link 
   URL. Supports seamless loading of CSV, TSV, Excel, TXT, RDS, and RData files 
   into your workspace, with all other file types downloaded automatically to 
