@@ -1,0 +1,29 @@
+Package: CloudBurglar
+Type: Package
+Title: Load or Download SharePoint and OneDrive Files by URL
+Version: 0.1.0
+Authors@R: person(
+    "Mike", "McMahon",
+    role = c("aut", "cre"),
+    email = "Mike.McMahon@dfo-mpo.gc.ca",
+    comment = NULL
+  )
+Description: Description: Provides a single function to load files from 
+  Microsoft SharePoint or OneDrive directly into R using just a sharing link 
+  URL. Supports seamless loading of CSV, TSV, Excel, TXT, RDS, and RData files 
+  into your workspace, with all other file types downloaded automatically to 
+  your working directory. Avoids manual navigation and download steps, making it 
+  easier to access files from Office365 sharing links.
+Depends:
+    R (>= 4.1.0)
+Imports:
+  Microsoft365R,
+  readr,
+  stringr
+Suggests: 
+    testthat (>= 3.0.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
