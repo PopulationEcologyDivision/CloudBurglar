@@ -1,4 +1,5 @@
 test_that("Errors appropriately for missing file", {
+  if (is.na(site_csv_url)) skip("No SharePoint test url")
   parts <- parse_m365_url_components(site_csv_url)
   site_url <- parts$site_url
   expect_error(
