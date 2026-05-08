@@ -3,3 +3,4 @@
 ^LICENSE\.md$
 ^set_sharepoint_test_env.R$
 ^set_sharepoint_test_env_TEMPLATE.R$
+^\.github$

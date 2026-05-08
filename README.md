@@ -1,4 +1,7 @@
 # CloudBurglar
+  <!-- badges: start -->
+  [![R-CMD-check](https://github.com/PopulationEcologyDivision/CloudBurglar/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/PopulationEcologyDivision/CloudBurglar/actions/workflows/R-CMD-check.yaml)
+  <!-- badges: end -->
 
 | ![](man/figures/CloudBurglarLogo.png) | Effortlessly load or download files from Microsoft SharePoint or OneDrive into R using only a sharing link. Supports automated searching and folder recursion - no more navigating complex folder structures or downloading files by hand! |
 |---------|:--------------------------------------------------|
