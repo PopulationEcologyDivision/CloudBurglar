@@ -1,5 +1,5 @@
 test_that("Document library names are normalized correctly", {
-  if (is.na(site_csv_url)|is.na(personal_url)) skip("No SharePoint test url")
+  if (is.na(site_csv_url)|is.na(personal_csv_url)) skip("No SharePoint test url")
   personal_url <- parse_m365_url_components(personal_csv_url)$site_url
   site_url <- parse_m365_url_components(site_csv_url)$site_url
 
