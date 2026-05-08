@@ -1,6 +1,6 @@
-#' load_m365_file
+#' get_file
 #'
-#' @title load_m365_file
+#' @title get_file
 #'
 #' @description Loads or downloads a SharePoint/OneDrive file given a sharing URL.
 #'
@@ -12,7 +12,7 @@
 #'
 #' @author Mike McMahon, \email{Mike.McMahon@@dfo-mpo.gc.ca}
 #' @export
-load_m365_file <- function(file_url, library = NULL, ...) {
+get_file <- function(file_url, library = NULL, ...) {
   itm <- find_m365_item(file_url, library)
   fname <- itm$properties$name
   ext <- tolower(tools::file_ext(fname))
