@@ -1,6 +1,7 @@
 # CloudBurglar
 
-Effortlessly load or download files from Microsoft SharePoint or OneDrive into R using only a sharing link. Supports automated searching and folder recursion - no more navigating complex folder structures or downloading files by hand!
+| ![](man/figures/CloudBurglarLogo.png) | Effortlessly load or download files from Microsoft SharePoint or OneDrive into R using only a sharing link. Supports automated searching and folder recursion - no more navigating complex folder structures or downloading files by hand! |
+|---------|:--------------------------------------------------|
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -23,24 +24,29 @@ Effortlessly load or download files from Microsoft SharePoint or OneDrive into R
 
 Install from GitHub using one of the methods below:
 
+```r
 remotes::install_github("PopulationEcologyDivision/CloudBurglar")
 pak::pak("PopulationEcologyDivision/CloudBurglar")
 devtools::install_github('PopulationEcologyDivision/CloudBurglar')
+```
+
 ---
 
 ## Example Usage
 
+```r
 library(CloudBurglar)
 
 # Load a CSV from SharePoint directly into R  
-df <- get_file("https://yourorg.sharepoint.com/sites/team/Shared%20Documents/data.csv")
+df <- get_file("https://yourorg.sharepoint.com/:u:/r/sites/team/Shared%20Documents/data.csv?d=wa5882baa9d1d4ffea3d32e20d20f523b&csf=1&web=1&e=6SJtAG")
 
 # Load an RDS file from OneDrive  
-obj <- get_file("https://yourorg-my.sharepoint.com/personal/your_name/Documents/fav_model.rds")
+obj <- get_file("https://yourorg-my.sharepoint.com/:x:/r/personal/your_name/Documents/fav_model.rds?csf=1&web=1&e=tWF1LU")
 
 # Download an image to your working directory  
-img_path <- get_file("https://yourorg-my.sharepoint.com/personal/your_name/Documents/photos/dog.jpg")  
+img_path <- get_file("https://yourorg-my.sharepoint.com/:i:/r/personal/your_name/Documents/photos/dog.jpg?csf=1&web=1&e=WmNhhC")  
 # The file is now saved at 'img_path'
+```
 
 ---
 
