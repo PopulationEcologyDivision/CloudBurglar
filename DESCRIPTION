@@ -1,7 +1,7 @@
 Package: CloudBurglar
 Type: Package
 Title: Load or Download SharePoint and OneDrive Files by URL
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person(
     "Mike", "McMahon",
     role = c("aut", "cre"),
@@ -17,6 +17,7 @@ Description: Provides a single function to load files from
 Depends:
     R (>= 4.1.0)
 Imports:
+  httpuv,
   Microsoft365R,
   readr,
   stringr
